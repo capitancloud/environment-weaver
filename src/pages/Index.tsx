@@ -4,6 +4,7 @@ import ConfigExplainer from '@/components/ConfigExplainer';
 import FeatureFlagsPanel from '@/components/FeatureFlagsPanel';
 import EnvironmentDiagram from '@/components/EnvironmentDiagram';
 import EnvironmentSimulator from '@/components/EnvironmentSimulator';
+import CICDDiagram from '@/components/CICDDiagram';
 import { EnvironmentProvider } from '@/contexts/EnvironmentContext';
 
 const Index = () => {
@@ -40,6 +41,9 @@ const Index = () => {
             
             {/* Environment diagram - full width */}
             <EnvironmentDiagram />
+            
+            {/* CI/CD Pipeline Diagram - NEW */}
+            <CICDDiagram />
           </div>
 
           {/* Footer note */}

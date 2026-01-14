@@ -86,7 +86,7 @@ const logLevelConfig: Record<LogLevel, { icon: React.ReactNode; color: string; b
 const LogViewer = () => {
   const { currentEnvironment, config } = useEnvironment();
   const [logs, setLogs] = useState<LogEntry[]>([]);
-  const [isStreaming, setIsStreaming] = useState(true);
+  const [isStreaming, setIsStreaming] = useState(false);
   const [filter, setFilter] = useState<LogLevel | 'all'>('all');
   const logsEndRef = useRef<HTMLDivElement>(null);
   const containerRef = useRef<HTMLDivElement>(null);

@@ -7,6 +7,7 @@ import EnvironmentSimulator from '@/components/EnvironmentSimulator';
 import CICDDiagram from '@/components/CICDDiagram';
 import ABTestingSimulator from '@/components/ABTestingSimulator';
 import LogViewer from '@/components/LogViewer';
+import SecretsManager from '@/components/SecretsManager';
 import { EnvironmentProvider } from '@/contexts/EnvironmentContext';
 
 const Index = () => {
@@ -50,8 +51,11 @@ const Index = () => {
             {/* A/B Testing Simulator */}
             <ABTestingSimulator />
             
-            {/* Log Viewer - NEW */}
+            {/* Log Viewer */}
             <LogViewer />
+            
+            {/* Secrets Manager - NEW */}
+            <SecretsManager />
           </div>
 
           {/* Footer note */}

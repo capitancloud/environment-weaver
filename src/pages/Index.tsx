@@ -5,6 +5,7 @@ import FeatureFlagsPanel from '@/components/FeatureFlagsPanel';
 import EnvironmentDiagram from '@/components/EnvironmentDiagram';
 import EnvironmentSimulator from '@/components/EnvironmentSimulator';
 import CICDDiagram from '@/components/CICDDiagram';
+import ABTestingSimulator from '@/components/ABTestingSimulator';
 import { EnvironmentProvider } from '@/contexts/EnvironmentContext';
 
 const Index = () => {
@@ -42,8 +43,11 @@ const Index = () => {
             {/* Environment diagram - full width */}
             <EnvironmentDiagram />
             
-            {/* CI/CD Pipeline Diagram - NEW */}
+            {/* CI/CD Pipeline Diagram */}
             <CICDDiagram />
+            
+            {/* A/B Testing Simulator - NEW */}
+            <ABTestingSimulator />
           </div>
 
           {/* Footer note */}
